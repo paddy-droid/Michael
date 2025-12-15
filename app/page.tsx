@@ -1,23 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
     const observerOptions = {
       root: null,
       rootMargin: "0px",
@@ -37,93 +24,12 @@ export default function Home() {
     });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       observer.disconnect();
     };
   }, []);
 
   return (
     <>
-      {/* Navigation */}
-      <nav
-        className={`fixed w-full z-50 glass-effect border-b border-slate-200 transition-all duration-300 ${isScrolled ? "h-16 shadow-md" : "h-20"
-          }`}
-        id="navbar"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-full">
-            <div className="flex-shrink-0 flex items-center gap-2">
-              <i className="fa-solid fa-microchip text-brand-primary text-2xl"></i>
-              <span className="font-display font-bold text-2xl tracking-wide text-brand-dark">
-                RESEARCH<span className="text-brand-primary">CONTROL</span>
-              </span>
-            </div>
-            <div className="hidden md:flex space-x-8 items-center">
-              {/* Using anchor tags for hash scrolling compatibility with standard browser behavior */}
-              <a href="#leistungen" className="text-slate-600 hover:text-brand-primary font-medium transition-colors">
-                Leistungen
-              </a>
-              <a href="#expertise" className="text-slate-600 hover:text-brand-primary font-medium transition-colors">
-                Expertise
-              </a>
-              <a href="#ueber-mich" className="text-slate-600 hover:text-brand-primary font-medium transition-colors">
-                Über Mich
-              </a>
-              <a
-                href="#kontakt"
-                className="px-6 py-2.5 bg-brand-primary text-white font-semibold rounded-full hover:bg-brand-secondary transition-all shadow-lg hover:shadow-neon transform hover:scale-105"
-              >
-                Kontakt aufnehmen
-              </a>
-            </div>
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
-              <button
-                id="mobile-menu-btn"
-                className="text-slate-600 hover:text-brand-primary focus:outline-none"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                <i className="fa-solid fa-bars text-2xl"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* Mobile Menu */}
-        <div
-          id="mobile-menu"
-          className={`${isMobileMenuOpen ? "block" : "hidden"} md:hidden bg-white border-t border-slate-100 absolute w-full`}
-        >
-          <a
-            href="#leistungen"
-            className="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-primary"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Leistungen
-          </a>
-          <a
-            href="#expertise"
-            className="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-primary"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Expertise
-          </a>
-          <a
-            href="#ueber-mich"
-            className="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-primary"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Über Mich
-          </a>
-          <a
-            href="#kontakt"
-            className="block px-4 py-3 text-brand-primary font-bold"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Kontakt
-          </a>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <header className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-dark">
         {/* Background Image with Overlay */}
@@ -150,9 +56,9 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-6 reveal">
-            Softwareentwicklung mit <br />
+            Industrielle PC-Software <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-accent to-brand-primary bg-300% animate-gradient">
-              technischer Präzision
+              & Automatisierungstechnik
             </span>
           </h1>
 
@@ -189,6 +95,9 @@ export default function Home() {
             </span>
             <span className="flex items-center gap-2 text-slate-300 font-mono">
               <i className="fa-solid fa-code"></i> WPF / MVVM
+            </span>
+            <span className="flex items-center gap-2 text-slate-300 font-mono">
+              <i className="fa-solid fa-desktop"></i> HMI / Visualisierung
             </span>
             <span className="flex items-center gap-2 text-slate-300 font-mono">
               <i className="fa-solid fa-robot"></i> Automation
@@ -315,6 +224,14 @@ export default function Home() {
                   <span className="block text-3xl font-bold text-brand-accent mb-1">Physik</span>
                   <span className="text-sm text-slate-500">Verständnis</span>
                 </div>
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                  <span className="block text-2xl md:text-3xl font-bold text-brand-secondary mb-1 truncate" title="Industrielle Automatisierung">Automation</span>
+                  <span className="text-sm text-slate-500">Tiefes Know-how</span>
+                </div>
+                <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
+                  <span className="block text-3xl font-bold text-slate-700 mb-1">HMI / GUI</span>
+                  <span className="text-sm text-slate-500">Intuitive Bedienung</span>
+                </div>
               </div>
             </div>
 
@@ -382,21 +299,21 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 text-slate-300 hover:text-brand-primary transition-colors cursor-pointer group">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-brand-primary/20">
-                      <i className="fa-solid fa-globe text-brand-primary"></i>
+                      <i className="fa-solid fa-phone text-brand-primary"></i>
                     </div>
-                    <span>www.researchcontrol.de</span>
+                    <span>+49 172 3714220</span>
                   </div>
                   <div className="flex items-center gap-4 text-slate-300 hover:text-brand-primary transition-colors cursor-pointer group">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-brand-primary/20">
                       <i className="fa-solid fa-envelope text-brand-primary"></i>
                     </div>
-                    <span>kontakt@researchcontrol.de</span>
+                    <span>hermann@researchcontrol.de</span>
                   </div>
                   <div className="flex items-center gap-4 text-slate-300 hover:text-brand-primary transition-colors cursor-pointer group">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-brand-primary/20">
                       <i className="fa-solid fa-location-dot text-brand-primary"></i>
                     </div>
-                    <span>Deutschland</span>
+                    <span>Seesiedlung 14, 17252 Mirow</span>
                   </div>
                 </div>
               </div>
@@ -406,7 +323,7 @@ export default function Home() {
                   &quot;Qualität entsteht dort, wo technisches Verständnis auf sauberen Code trifft.&quot;
                 </p>
                 <a
-                  href="mailto:kontakt@researchcontrol.de"
+                  href="mailto:hermann@researchcontrol.de"
                   className="block w-full text-center py-4 bg-brand-primary hover:bg-brand-secondary text-white rounded-lg font-bold shadow-lg shadow-brand-primary/20 hover:shadow-brand-primary/40 transition-all transform hover:-translate-y-1"
                 >
                   Jetzt Anfrage senden
@@ -415,7 +332,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Footer */}
       <footer className="bg-slate-900 border-t border-slate-800 py-12 text-slate-400 text-sm">
@@ -424,7 +341,7 @@ export default function Home() {
             &copy; {new Date().getFullYear()} Research Control - Michael Hermann. Alle Rechte vorbehalten.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="/impressum" className="hover:text-white transition-colors">
               Impressum
             </a>
             <a href="#" className="hover:text-white transition-colors">
