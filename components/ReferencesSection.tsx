@@ -7,63 +7,64 @@ const references = [
     {
         name: "Carl Zeiss",
         alt: "Softwareentwicklung Automatisierung Referenz Carl Zeiss",
-        src: "/logos/zeiss.png",
+        src: "/Zeiss_logo.svg.png",
         placeholderText: "ZEISS",
     },
     {
         name: "Infineon",
         alt: "Prozesssteuerung Halbleiterindustrie Infineon",
-        src: "/logos/infineon.png",
+        src: "/Infineon-Logo.svg.png",
         placeholderText: "Infineon",
     },
     {
         name: "KLA",
         alt: "SPS Software Engineering KLA Corporation",
-        src: "/logos/kla.png",
+        src: "/KLA.png",
         placeholderText: "KLA",
     },
     // Spezialisten & Industrie
     {
         name: "Hekuma",
         alt: "HMI Entwicklung Spritzgussmaschinen Hekuma",
-        src: "/logos/hekuma.png",
+        src: "", // Logo missing
         placeholderText: "HEKUMA",
     },
     {
         name: "Vistec",
         alt: "Elektronenstrahllithografie Steuerung Vistec",
-        src: "/logos/vistec.png", // Added generic alt for SEO consistency if not provided
+        src: "/Vistec.png",
         placeholderText: "Vistec",
     },
     {
         name: "Freiberger",
         alt: "Compound Materials Prozessautomatisierung Freiberger",
-        src: "/logos/freiberger.png",
+        src: "/freiberger_logo-color.175x0.png",
         placeholderText: "Freiberger",
     },
     {
         name: "Omicron",
         alt: "Lasersysteme Software Steuerung Omicron",
-        src: "/logos/omicron.png",
+        src: "/Omicron.png",
         placeholderText: "OMICRON",
     },
     // Medizintechnik & Forschung
     {
         name: "Gambro",
         alt: "Medizintechnik Dialyse Software Gambro",
-        src: "/logos/gambro.png",
+        src: "/gambro-logo.png",
         placeholderText: "Gambro",
     },
     {
         name: "Seleon",
         alt: "Medizintechnik Software Dosiersysteme Seleon",
-        src: "/logos/seleon.png",
+        src: "/seleon_Logo_white-1.png",
         placeholderText: "seleon",
+        className: "bg-slate-800 p-2 rounded", // Added to handle likely white logo
     },
     {
         name: "TU Bergakademie Freiberg",
         alt: "Forschungsprojekt Automatisierung TU Bergakademie",
-        src: "/logos/tu-freiberg.png",
+        src: "/TUBAF_Logo.svg.png",
         placeholderText: "TU Freiberg",
     },
 ];
@@ -88,28 +89,22 @@ export default function ReferencesSection() {
                     {references.map((ref, index) => (
                         <div
                             key={index}
-                            className="group flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-lg hover:border-brand-primary/20 transition-all duration-300 h-32"
+                            className={`group flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-lg hover:border-brand-primary/20 transition-all duration-300 h-32 ${ref.src ? '' : 'bg-slate-50'}`}
                         >
-                            <div className="relative w-full h-full flex items-center justify-center filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
-                                {/* 
-                  NOTE: Using a text fallback since we don't have the actual logo files yet.
-                  In a real scenario, the Image component would be used.
-                  For now, we render a stylish text placeholder that looks professional.
-                */}
-                                <span className="font-display font-bold text-xl text-slate-400 group-hover:text-slate-900 transition-colors">
-                                    {ref.placeholderText}
-                                </span>
-
-                                {/* Uncomment this block when logo files are present in /public/logos/ */}
-                                {/*
-                <Image
-                  src={ref.src}
-                  alt={ref.alt}
-                  fill
-                  className="object-contain p-2"
-                  sizes="(max-width: 768px) 50vw, 20vw"
-                />
-                */}
+                            <div className={`relative w-full h-full flex items-center justify-center transition-all duration-300 ${ref.src ? 'filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105' : ''}`}>
+                                {ref.src ? (
+                                    <Image
+                                        src={ref.src}
+                                        alt={ref.alt}
+                                        fill
+                                        className={`object-contain ${ref.className || ''}`}
+                                        sizes="(max-width: 768px) 50vw, 20vw"
+                                    />
+                                ) : (
+                                    <span className="font-display font-bold text-xl text-slate-400 group-hover:text-slate-900 transition-colors">
+                                        {ref.placeholderText}
+                                    </span>
+                                )}
                             </div>
                         </div>
                     ))}

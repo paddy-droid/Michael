@@ -168,9 +168,24 @@ export default function AboutPage() {
             <section className="py-20 bg-brand-light">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-display font-bold text-stone-900 mb-6">Erfahrung, die zählt</h2>
-                    <p className="text-xl text-stone-600 mb-12">
-                        Seit über 15 Jahren bewege ich mich in anspruchsvollen Branchen wie der Halbleiterindustrie, der Medizintechnik und der optischen Industrie. Ich bin es gewohnt, in stark reglementierten Umfeldern zu arbeiten und Software zu liefern, die nicht nur funktioniert, sondern präzise und ausfallsicher ist.
-                    </p>
+                    <div className="grid md:grid-cols-2 gap-12 items-center mb-12 text-left">
+                        <div>
+                            <p className="text-xl text-stone-600 mb-6">
+                                Seit über 15 Jahren bewege ich mich in anspruchsvollen Branchen wie der Halbleiterindustrie, der Medizintechnik und der optischen Industrie. Ich bin es gewohnt, in stark reglementierten Umfeldern zu arbeiten und Software zu liefern, die nicht nur funktioniert, sondern präzise und ausfallsicher ist.
+                            </p>
+                            <p className="text-xl text-stone-600">
+                                Mein Anspruch ist es, komplexe technologische Anforderungen in intuitive und robuste Software zu übersetzen, die Ihre tägliche Arbeit erleichtert und Prozesse beschleunigt.
+                            </p>
+                        </div>
+                        <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl border border-stone-200">
+                            <Image
+                                src="/Galerie%20Startseite/Michael%20Hermann.webp"
+                                alt="Michael Hermann bei der Arbeit"
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    </div>
 
                     <div className="bg-white p-10 rounded-2xl shadow-xl border border-orange-100">
                         <h3 className="text-2xl font-bold text-stone-900 mb-4">Starten wir Ihr Projekt</h3>

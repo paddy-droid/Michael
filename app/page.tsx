@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import Image from "next/image";
 import FaqSection from "@/components/FaqSection";
 import ReferencesSection from "@/components/ReferencesSection";
+import VideoSection from "@/components/VideoSection";
+import GallerySection from "@/components/GallerySection";
 
 export default function Home() {
   useEffect(() => {
@@ -35,16 +37,21 @@ export default function Home() {
       {/* Hero Section */}
       <header className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-dark">
         {/* Background Image with Overlay */}
+        {/* Background Video with Overlay */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/Automatisierungstechnik.webp"
-            alt="Automatisierungstechnik Background"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Subtle overlay for contrast, maximizing image visibility */}
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-black/20 to-brand-dark/80"></div>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="object-cover w-full h-full"
+          >
+            <source src="/Videoerstellung_für_Website_Hero_Sektion.mp4" type="video/mp4" />
+          </video>
+          {/* Enhanced overlay for better text readability against video */}
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/90 via-brand-dark/40 to-brand-dark/90"></div>
+          {/* Additional backdrop blur to ensure text pop */}
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
         </div>
 
         {/* Abstract Background Elements */}
@@ -216,7 +223,23 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div className="mb-12 lg:mb-0 reveal">
-              {/* Image moved to Hero Section */}
+              {/* Image moved from Hero Section */}
+              <div className="relative w-full mb-8 rounded-2xl overflow-hidden shadow-2xl border border-slate-100 group">
+                <Image
+                  src="/Automatisierungstechnik.webp"
+                  alt="Automatisierungstechnik Expertise"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }}
+                  className="transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute bottom-4 left-4">
+                  <span className="bg-brand-primary/90 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2 inline-block text-white shadow-sm">
+                    Expertise
+                  </span>
+                </div>
+              </div>
               {/* Stats / Highlights */}
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
@@ -281,6 +304,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <VideoSection />
+
       {/* Contact / CTA Section */}
       <section id="kontakt" className="py-24 bg-brand-dark text-white relative overflow-hidden">
         {/* Background Glow */}
@@ -336,6 +362,9 @@ export default function Home() {
           </div>
         </div>
       </section >
+
+      {/* Gallery Section */}
+      <GallerySection />
 
       {/* FAQ Section */}
       <FaqSection />
