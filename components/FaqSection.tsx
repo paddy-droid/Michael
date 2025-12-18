@@ -7,7 +7,7 @@ const faqData = [
         question: "Was genau ist Ihre Kernkompetenz in der Automatisierung?",
         answer: (
             <>
-                Mein Fokus liegt auf der Entwicklung maßgeschneiderter <strong>Windows-Applikationen</strong>, die industrielle Prozesse steuern, visualisieren und protokollieren. Im Gegensatz zu Standardlösungen biete ich Software an, die tief in die Maschinensteuerung eingreift. Dazu gehören:
+                Mein neuer Fokus liegt auf der Entwicklung maßgeschneiderter <strong>Windows-Applikationen</strong>, die industrielle Prozesse steuern, visualisieren und protokollieren. Im Gegensatz zu Standardlösungen biete ich Software an, die tief in die Maschinensteuerung eingreift. Dazu gehören:
                 <ul className="mt-4 space-y-2 list-none">
                     <li className="flex items-start gap-3">
                         <span className="text-brand-primary mt-1">
