@@ -1,20 +1,22 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export default function VideoSection() {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const t = useTranslations('VideoSection');
 
     return (
-        <section className="py-24 bg-slate-50 border-y border-slate-200 overflow-hidden">
+        <section id="automatisierung" className="py-24 bg-slate-50 border-y border-slate-200 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-4">
-                        PC-basierte Automatisierung in Aktion
+                        {t('title')}
                     </h2>
                     <div className="w-24 h-1 bg-brand-primary mx-auto rounded-full mb-6"></div>
                     <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Erleben Sie, wie moderne Software Hardware zum Leben erweckt. Von der präzisen Ansteuerung bis zur komplexen Datenanalyse.
+                        {t('subtitle')}
                     </p>
                 </div>
 

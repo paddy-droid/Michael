@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const galleryImages = [
     {
@@ -36,20 +37,22 @@ const galleryImages = [
 ];
 
 export default function GallerySection() {
+    const t = useTranslations('GallerySection');
+
     return (
-        <section className="py-24 bg-brand-dark border-y border-slate-800 relative overflow-hidden">
+        <section id="impressionen" className="py-24 bg-brand-dark border-y border-slate-800 relative overflow-hidden">
             {/* Background glow */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-primary opacity-5 blur-[120px] rounded-full pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <span className="text-brand-primary font-bold tracking-wider uppercase text-sm">Impressionen</span>
+                    <span className="text-brand-primary font-bold tracking-wider uppercase text-sm">{t('label')}</span>
                     <h2 className="text-3xl md:text-4xl font-display font-bold text-white mt-2 mb-4">
-                        Einblick in die Technik-Welt
+                        {t('title')}
                     </h2>
                     <div className="w-24 h-1 bg-brand-primary mx-auto rounded-full mb-6"></div>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                        High-Tech Umgebungen, Reinräume und komplexe Maschinen sind mein tägliches Arbeitsumfeld.
+                        {t('subtitle')}
                     </p>
                 </div>
 

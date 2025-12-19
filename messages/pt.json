@@ -1,0 +1,150 @@
+{
+    "Navbar": {
+        "leistungen": "SERVIÇOS",
+        "expertise": "EXPERTISE",
+        "wissenswertes": "CURIOSIDADES",
+        "impressionen": "IMPRESSÕES",
+        "referenzen": "REFERÊNCIAS",
+        "faq": "FAQ",
+        "ueber_mich": "SOBRE MIM",
+        "kontakt": "CONTATO"
+    },
+    "Hero": {
+        "title_1": "Software Industrial PC",
+        "title_2": "& Tecnologia de Automação",
+        "subtitle": "Especializado em aplicações complexas com base físico-técnica. Da automação laboratorial ao controle de máquinas.",
+        "cta_leistungen": "VER PERFIL DE SERVIÇOS",
+        "cta_kontakt": "SOLICITAR PROJETO"
+    },
+    "Services": {
+        "title": "Meu Perfil de Serviços",
+        "subtitle": "Soluções de software personalizadas na interface entre homem, máquina e física.",
+        "cards": {
+            "gui": {
+                "title": "Interfaces de Usuário (GUI/HMI)",
+                "desc": "Desenvolvimento de interfaces de usuário modernas no Windows com C#, WPF e padrão MVVM. Para uma comunicação homem-máquina intuitiva."
+            },
+            "data": {
+                "title": "Coleta de Dados Online",
+                "desc": "Registro e monitoramento confiáveis através de todas as interfaces comuns. Processamento de dados em tempo real para seus processos laboratoriais ou industriais."
+            },
+            "control": {
+                "title": "Controle & Regulação",
+                "desc": "Controle preciso de processos e regulação de parâmetros complexos. Do controle de temperatura a cadeias de processos complexas."
+            },
+            "hardware": {
+                "title": "Controle de Hardware",
+                "desc": "Controle direto de motores, acionamentos, válvulas e aquecedores. Integração perfeita de atuadores em seu ambiente de software."
+            },
+            "analysis": {
+                "title": "Análises & Cálculos",
+                "desc": "Implementação de avaliações físicas complexas e cálculos matemáticos exatamente de acordo com as especificações do cliente."
+            },
+            "commissioning": {
+                "title": "Concepção & Comissionamento",
+                "desc": "Suporte holístico: Da concepção ao comissionamento do hardware eletrônico e eletrotécnico conectado."
+            }
+        }
+    },
+    "Expertise": {
+        "title": "Por que um escritório de engenharia especializado?",
+        "text_1": "Desenvolvedores de software padrão atingem seus limites quando é necessário entendimento físico e know-how eletrotécnico.",
+        "text_2": "Na <strong>Research Control</strong>, você recebe não apenas código limpo, mas um parceiro que entende o que seus instrumentos de medição, sensores e atuadores devem realizar fisicamente. Combino arquitetura de software moderna (MVVM) com requisitos rígidos de tempo real.",
+        "list_1": "Profundo entendimento de tecnologia de medição e controle",
+        "list_2": "Expertise em automação laboratorial",
+        "list_3": "Soluções individuais em vez de software modular",
+        "btn_more": "Saiba mais",
+        "stats": {
+            "csharp": {
+                "val": "C# / WPF",
+                "sub": "Competência Central"
+            },
+            "physics": {
+                "val": "Física",
+                "sub": "Compreensão"
+            },
+            "automation": {
+                "val": "Automação",
+                "sub": "Profundo Know-how"
+            },
+            "hmi": {
+                "val": "HMI / GUI",
+                "sub": "Operação Intuitiva"
+            }
+        }
+    },
+    "Contact": {
+        "title": "Pronto para o seu projeto?",
+        "subtitle": "Vamos conversar sobre como dar vida ao seu hardware com o software certo.",
+        "quote": "\"Qualidade surge onde o entendimento técnico encontra código limpo.\"",
+        "btn_send": "Enviar Solicitação Agora"
+    },
+    "Footer": {
+        "rights": "Research Control - Michael Hermann. Todos os direitos reservados.",
+        "imprint": "Aviso Legal",
+        "privacy": "Privacidade"
+    },
+    "VideoSection": {
+        "title": "Automação Baseada em PC em Ação",
+        "subtitle": "Veja como o software moderno dá vida ao hardware. Do controle preciso à análise de dados complexa."
+    },
+    "GallerySection": {
+        "label": "IMPRESSÕES",
+        "title": "Visão do Mundo Técnico",
+        "subtitle": "Ambientes de alta tecnologia, salas limpas e máquinas complexas são meu ambiente de trabalho diário."
+    },
+    "ReferencesSection": {
+        "title": "Projetos de Sucesso com Líderes Tecnológicos",
+        "subtitle": "Há mais de 15 anos implemento soluções de software sofisticadas para líderes de mercado na indústria de semicondutores, tecnologia médica e indústria óptica. Aqui está um extrato dos meus parceiros de projeto:",
+        "footer": "* Logotipos de marcas servem como referência para projetos realizados."
+    },
+    "Faq": {
+        "label": "CURIOSIDADES",
+        "title": "Perguntas Frequentes sobre Automação Industrial",
+        "subtitle": "Aqui você encontra respostas sobre soluções de software individuais para a indústria, controles baseados em PC e a integração de sistemas PLC.",
+        "q1": "Qual é exatamente sua competência central na automação?",
+        "a1": "Meu foco é o desenvolvimento de <strong>aplicações Windows</strong> personalizadas que controlam, visualizam e registram processos industriais. Ao contrário de soluções padrão, ofereço software que intervém profundamente no controle da máquina. Isso inclui:<br/><br/><ul><li><strong>Controle de Sensores & Atuadores:</strong> Consulta direta de sensores e controle de motores.</li><li><strong>Integração de Interfaces:</strong> Comunicação com sistemas PLC via OPC UA ou gRPC.</li><li><strong>Gerenciamento de Dados:</strong> Registro e armazenamento de dados do processo.</li><li><strong>Configuração:</strong> Fornecimento de amplas opções de configuração.</li></ul>",
+        "q2": "Quando um controle baseado em PC (App Windows) é melhor que uma solução puramente PLC?",
+        "a2": "Uma <strong>aplicação .NET no Windows</strong> é a melhor escolha quando: <strong>Alta flexibilidade</strong> é exigida, <strong>Cálculos complexos</strong> são necessários, <strong>Comunicação avançada</strong> com sistemas superiores é necessária ou <strong>Diversidade de dados</strong> prevalece.",
+        "q3": "Você também oferece soluções híbridas de PC e PLC?",
+        "a3": "Sim, esse é um cenário muito comum. Controles críticos em tempo real são processados no PLC, enquanto a aplicação Windows atua como \"cérebro\" (coordenação, visualização, comunicação).",
+        "q4": "Você acompanha projetos apenas do lado do software ou oferece um serviço holístico?",
+        "a4": "Minha abordagem é holística. Acompanho você por todo o processo – da arquitetura e design, passando pelo planejamento de hardware e comissionamento, até o serviço de ciclo de vida.",
+        "q5": "Como é um projeto típico com você?",
+        "a5": "Um projeto ideal começa muitas vezes com uma ideia específica para uma máquina. Meu objetivo é \"dar vida a essa máquina\". Projeto a aplicação adequada e garanto uma integração perfeita."
+    },
+    "About": {
+        "title": "Eu dou vida <br /> às máquinas.",
+        "subtitle": "A ponte entre TI e máquina – soluções de software personalizadas para a indústria.",
+        "intro_title": "A ponte entre <span class=\"text-brand-primary\">TI e máquina</span>",
+        "intro_text_1": "Meu nome é Michael Hermann, sou engenheiro diplomado (FH) em tecnologia de componentes eletrônicos e engenheiro especialista em tecnologia de microprocessadores. Minha paixão reside exatamente na interface de dois mundos: Onde o <strong>hardware clássico de engenharia mecânica</strong> encontra a <strong>arquitetura de software moderna</strong>.",
+        "intro_text_2": "Enquanto muitos desenvolvedores permanecem puramente no mundo virtual, minha competência central é desenvolver aplicações Windows que controlam, exibem e registram processos industriais reais. Garanto que seu PC não apenas processe dados, mas se comunique diretamente com sensores, motores e válvulas.",
+        "quote_title": "Minha Filosofia: Mais do que apenas código",
+        "quote_text": "\"Para mim, um projeto só é bem-sucedido quando uma construção rígida se torna um processo dinâmico. Meu projeto favorito começa frequentemente com sua ideia para uma máquina ou instrumento de medição e termina comigo dando vida a essa máquina através do meu software.\"",
+        "intro_text_3": "Não me vejo apenas como um receptor de ordens para código de software, mas como <strong>parceiro em todo o processo de desenvolvimento</strong>. Da seleção dos sensores adequados, passando pela criação dos diagramas de circuitos, até o comissionamento conjunto no chão de fábrica.",
+        "why_title": "Por que controle baseado em PC?",
+        "why_text": "Em minha longa prática – inclusive para clientes como <span class=\"text-white font-semibold\"> Carl Zeiss, Infineon e seleon</span> – aprendi que um simples PLC muitas vezes não é suficiente. Quando processos precisam ser altamente flexíveis, exigem cálculos matemáticos complexos ou devem ser profundamente integrados à TI da empresa, uma aplicação .NET no Windows é superior.",
+        "stats_exp": {
+            "val": "15+ Anos",
+            "sub": "Experiência na Indústria"
+        },
+        "stats_tech": {
+            "val": "High-Tech",
+            "sub": "Semicondutores & Tec. Médica"
+        },
+        "offer_title": "Ofereço exatamente essa flexibilidade:",
+        "offer_tech_title": "Tecnologia",
+        "offer_tech_text": "C# (WPF, MVVM) no estado da arte (.NET 4.8 / Framework 8.0).",
+        "offer_comm_title": "Comunicação",
+        "offer_comm_text": "Integração perfeita de PLC (Beckhoff, Wago, Codesys) via OPC UA, gRPC ou TCP/IP.",
+        "offer_qual_title": "Qualidade",
+        "offer_qual_text": "Código Limpo (Resharper), Testes Unitários e Git para software sustentável e seguro.",
+        "exp_title": "Experiência que conta",
+        "exp_text_1": "Há mais de 15 anos atuo em setores exigentes como a indústria de semicondutores, tecnologia médica e indústria óptica. Estou acostumado a trabalhar em ambientes altamente regulamentados e a entregar software que não apenas funciona, mas é preciso e à prova de falhas.",
+        "exp_text_2": "Minha missão é traduzir requisitos tecnológicos complexos em software intuitivo e robusto, que facilita seu trabalho diário e acelera processos.",
+        "cta_title": "Vamos iniciar seu projeto",
+        "cta_text": "Seja uma solução híbrida complexa de PC e PLC ou uma visualização personalizada para uma bancada de testes – estou pronto para transformar seus requisitos em software funcional.",
+        "cta_btn_contact": "Entrar em contato",
+        "cta_btn_home": "Para a página inicial"
+    }
+}

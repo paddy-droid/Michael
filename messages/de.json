@@ -1,0 +1,150 @@
+{
+  "Navbar": {
+    "leistungen": "LEISTUNGEN",
+    "expertise": "EXPERTISE",
+    "wissenswertes": "WISSENSWERTES",
+    "impressionen": "IMPRESSIONEN",
+    "referenzen": "REFERENZEN",
+    "faq": "FAQ",
+    "ueber_mich": "ÜBER MICH",
+    "kontakt": "KONTAKT"
+  },
+  "Hero": {
+    "title_1": "Industrielle PC-Software",
+    "title_2": "& Automatisierungstechnik",
+    "subtitle": "Spezialisiert auf komplexe Anwendungen mit physikalisch-technischem Hintergrund. Von der Laborautomatisierung bis zur Maschinensteuerung.",
+    "cta_leistungen": "LEISTUNGSPROFIL ANSEHEN",
+    "cta_kontakt": "PROJEKT ANFRAGEN"
+  },
+  "Services": {
+    "title": "Mein Leistungsprofil",
+    "subtitle": "Maßgeschneiderte Softwarelösungen an der Schnittstelle zwischen Mensch, Maschine und Physik.",
+    "cards": {
+      "gui": {
+        "title": "Bedienoberflächen (GUI/HMI)",
+        "desc": "Entwicklung moderner User Interfaces unter Windows mit C#, WPF und dem MVVM-Pattern. Für eine intuitive Mensch-Maschine-Kommunikation."
+      },
+      "data": {
+        "title": "Online-Datenerfassung",
+        "desc": "Zuverlässiges Logging und Monitoring über alle gängigen Schnittstellen. Echtzeit-Datenverarbeitung für Ihre Labor- oder Industrieprozesse."
+      },
+      "control": {
+        "title": "Steuerung & Regelung",
+        "desc": "Präzise Steuerung von Abläufen und Regelung komplexer Parameter. Von der Temperaturregelung bis zur komplexen Prozesskette."
+      },
+      "hardware": {
+        "title": "Hardware Ansteuerung",
+        "desc": "Direkte Ansteuerung von Motoren, Antrieben, Ventilen und Heizungen. Nahtlose Integration von Aktoren in Ihre Softwareumgebung."
+      },
+      "analysis": {
+        "title": "Analysen & Berechnungen",
+        "desc": "Umsetzung komplexer physikalischer Auswertungen und mathematischer Berechnungen exakt nach Ihren Kundenvorgaben."
+      },
+      "commissioning": {
+        "title": "Konzeption & Inbetriebnahme",
+        "desc": "Ganzheitliche Betreuung: Von der Konzeption bis zur Inbetriebnahme angeschlossener elektronischer und elektrotechnischer Hardware."
+      }
+    }
+  },
+  "Expertise": {
+    "title": "Warum ein spezialisiertes Ingenieurbüro?",
+    "text_1": "Standard-Softwareentwickler stoßen an ihre Grenzen, wenn physikalisches Verständnis und elektrotechnisches Know-how gefragt sind.",
+    "text_2": "Bei <strong>Research Control</strong> erhalten Sie nicht nur sauberen Code, sondern einen Partner, der versteht, was Ihre Messgeräte, Sensoren und Aktoren physikalisch leisten müssen. Ich verbinde moderne Softwarearchitektur (MVVM) mit harter Real-Time-Anforderung.",
+    "list_1": "Tiefes Verständnis für Mess- und Regelungstechnik",
+    "list_2": "Expertise in Laborautomatisierung",
+    "list_3": "Individuelle Lösungen statt Baukasten-Software",
+    "btn_more": "Mehr erfahren",
+    "stats": {
+      "csharp": {
+        "val": "C# / WPF",
+        "sub": "Kernkompetenz"
+      },
+      "physics": {
+        "val": "Physik",
+        "sub": "Verständnis"
+      },
+      "automation": {
+        "val": "Automation",
+        "sub": "Tiefes Know-how"
+      },
+      "hmi": {
+        "val": "HMI / GUI",
+        "sub": "Intuitive Bedienung"
+      }
+    }
+  },
+  "Contact": {
+    "title": "Bereit für Ihr Projekt?",
+    "subtitle": "Lassen Sie uns darüber sprechen, wie wir Ihre Hardware mit der passenden Software zum Leben erwecken.",
+    "quote": "\"Qualität entsteht dort, wo technisches Verständnis auf sauberen Code trifft.\"",
+    "btn_send": "Jetzt Anfrage senden"
+  },
+  "Footer": {
+    "rights": "Research Control - Michael Hermann. Alle Rechte vorbehalten.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "VideoSection": {
+    "title": "PC-basierte Automatisierung in Aktion",
+    "subtitle": "Erleben Sie, wie moderne Software Hardware zum Leben erweckt. Von der präzisen Ansteuerung bis zur komplexen Datenanalyse."
+  },
+  "GallerySection": {
+    "label": "IMPRESSIONEN",
+    "title": "Einblick in die Technik-Welt",
+    "subtitle": "High-Tech Umgebungen, Reinräume und komplexe Maschinen sind mein tägliches Arbeitsumfeld."
+  },
+  "ReferencesSection": {
+    "title": "Erfolgreiche Projekte bei Technologieführern",
+    "subtitle": "Seit über 15 Jahren realisiere ich anspruchsvolle Softwarelösungen für Marktführer in der Halbleiterindustrie, Medizintechnik und optischen Industrie. Hier ein Auszug meiner Projektpartner:",
+    "footer": "* Markenlogos dienen als Referenz für durchgeführte Projekte."
+  },
+  "Faq": {
+    "label": "Wissenswertes",
+    "title": "Häufige Fragen zu Industrieller Automatisierung",
+    "subtitle": "Hier finden Sie Antworten rund um individuelle Softwarelösungen für die Industrie, PC-basierte Steuerungen und die Integration von SPS-Systemen.",
+    "q1": "Was genau ist Ihre Kernkompetenz in der Automatisierung?",
+    "a1": "Mein Fokus liegt auf der Entwicklung maßgeschneiderter <strong>Windows-Applikationen</strong>, die industrielle Prozesse steuern, visualisieren und protokollieren. Im Gegensatz zu Standardlösungen biete ich Software an, die tief in die Maschinensteuerung eingreift. Dazu gehören:<br/><br/><ul><li><strong>Sensor- & Aktuator-Steuerung:</strong> Direkte Abfrage von Sensoren und Ansteuerung von Motoren.</li><li><strong>Schnittstellen-Integration:</strong> Kommunikation mit SPS-Systemen (PLC) via OPC UA oder gRPC.</li><li><strong>Datenmanagement:</strong> Protokollierung und Speicherung von Prozessdaten.</li><li><strong>Konfiguration:</strong> Bereitstellung umfangreicher Konfigurationsmöglichkeiten.</li></ul>",
+    "q2": "Wann ist eine PC-basierte Steuerung (Windows-App) besser als eine reine SPS-Lösung?",
+    "a2": "Eine <strong>.NET-Applikation unter Windows</strong> ist die bessere Wahl, wenn: <strong>Hohe Flexibilität</strong> gefordert ist, <strong>Komplexe Berechnungen</strong> nötig sind, <strong>Erweiterte Kommunikation</strong> mit übergeordneten Systemen erforderlich ist oder <strong>Datenvielfalt</strong> herrscht.",
+    "q3": "Bieten Sie auch Hybrid-Lösungen aus PC und SPS (PLC) an?",
+    "a3": "Ja, das ist ein sehr häufiges Szenario. Hierbei werden kritische Echtzeit-Steuerungen auf der SPS (PLC) abgewickelt, während die Windows-Applikation als \"Gehirn\" fungiert (Koordination, Visualisierung, Kommunikation).",
+    "q4": "Begleiten Sie Projekte nur softwareseitig oder bieten Sie einen ganzheitlichen Service?",
+    "a4": "Mein Ansatz ist ganzheitlich. Ich begleite Sie durch den gesamten Prozess – von Architektur & Design, über Hardware-Planung und Inbetriebnahme bis zum Lifecycle-Service.",
+    "q5": "Wie sieht ein typisches Projekt mit Ihnen aus?",
+    "a5": "Ein ideales Projekt startet oft mit einer spezifischen Idee für eine Maschine. Mein Ziel ist es, diese \"Maschine zum Leben zu erwecken\". Ich entwerfe die passende Applikation und sorge für eine nahtlose Integration."
+  },
+  "About": {
+    "title": "Ich bringe Maschinen <br /> zum Leben.",
+    "subtitle": "Der Brückenschlag zwischen IT und Maschine – maßgeschneiderte Softwarelösungen für die Industrie.",
+    "intro_title": "Der Brückenschlag zwischen <span class=\"text-brand-primary\">IT und Maschine</span>",
+    "intro_text_1": "Mein Name ist Michael Hermann, und ich bin Diplomingenieur (FH) für Technologie elektronischer Bauelemente und Spezialingenieur für Mikroprozessortechnik. Meine Leidenschaft liegt genau an der Schnittstelle zweier Welten: Dort, wo <strong>klassische Maschinenbau-Hardware</strong> auf <strong>moderne Software-Architektur</strong> trifft.",
+    "intro_text_2": "Während viele Entwickler rein in der virtuellen Welt bleiben, liegt meine Kernkompetenz darin, Windows-Applikationen zu entwickeln, die reale industrielle Prozesse steuern, anzeigen und protokollieren. Ich sorge dafür, dass Ihr PC nicht nur Daten verarbeitet, sondern direkt mit Sensoren, Motoren und Ventilen kommuniziert.",
+    "quote_title": "Meine Philosophie: Mehr als nur Code",
+    "quote_text": "\"Ein Projekt ist für mich dann erfolgreich, wenn aus einer starren Konstruktion ein dynamischer Prozess wird. Mein Lieblingsprojekt beginnt oft mit Ihrer Idee für eine Maschine oder ein Messgerät und endet damit, dass ich diese Maschine durch meine Software zum Leben erwecke.\"",
+    "intro_text_3": "Dabei verstehe ich mich nicht als reiner Befehlsempfänger für Software-Code, sondern als <strong>Partner im gesamten Entwicklungsprozess</strong>. Von der Auswahl der geeigneten Sensoren über die Erstellung der Stromlaufpläne bis hin zur gemeinsamen Inbetriebnahme in der Fertigungshalle.",
+    "why_title": "Warum PC-basierte Steuerung?",
+    "why_text": "In meiner langjährigen Praxis – unter anderem für Kunden wie <span class=\"text-white font-semibold\"> Carl Zeiss, Infineon und seleon</span> – habe ich gelernt, dass eine reine SPS oft nicht ausreicht. Wenn Prozesse hochflexibel sein müssen, komplexe mathematische Berechnungen erfordern oder tief in die Firmen-IT integriert werden sollen, ist eine .NET-Applikation unter Windows überlegen.",
+    "stats_exp": {
+      "val": "15+ Jahre",
+      "sub": "Erfahrung in der Industrie"
+    },
+    "stats_tech": {
+      "val": "High-Tech",
+      "sub": "Halbleiter & Medizintechnik"
+    },
+    "offer_title": "Ich biete Ihnen genau diese Flexibilität:",
+    "offer_tech_title": "Technologie",
+    "offer_tech_text": "C# (WPF, MVVM) auf dem neuesten Stand (.NET 4.8 / Framework 8.0).",
+    "offer_comm_title": "Kommunikation",
+    "offer_comm_text": "Nahtlose Integration von SPS (Beckhoff, Wago, Codesys) via OPC UA, gRPC oder TCP/IP.",
+    "offer_qual_title": "Qualität",
+    "offer_qual_text": "Clean Code (Resharper), Unit-Testing und Git für wartbare und sichere Software.",
+    "exp_title": "Erfahrung, die zählt",
+    "exp_text_1": "Seit über 15 Jahren bewege ich mich in anspruchsvollen Branchen wie der Halbleiterindustrie, der Medizintechnik und der optischen Industrie. Ich bin es gewohnt, in stark reglementierten Umfeldern zu arbeiten und Software zu liefern, die nicht nur funktioniert, sondern präzise und ausfallsicher ist.",
+    "exp_text_2": "Mein Anspruch ist es, komplexe technologische Anforderungen in intuitive und robuste Software zu übersetzen, die Ihre tägliche Arbeit erleichtert und Prozesse beschleunigt.",
+    "cta_title": "Starten wir Ihr Projekt",
+    "cta_text": "Egal ob Sie eine komplexe Hybrid-Lösung aus PC und SPS benötigen oder eine maßgeschneiderte Visualisierung für einen Versuchsstand suchen – ich stehe bereit, um Ihre Anforderungen in funktionierende Software umzusetzen.",
+    "cta_btn_contact": "Kontakt aufnehmen",
+    "cta_btn_home": "Zur Startseite"
+  }
+}

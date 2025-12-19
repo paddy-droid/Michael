@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const references = [
     // Global Player & Halbleiter/Optik
@@ -70,17 +71,19 @@ const references = [
 ];
 
 export default function ReferencesSection() {
+    const t = useTranslations('ReferencesSection');
+
     return (
-        <section className="py-24 bg-slate-50 border-t border-slate-200">
+        <section id="referenzen" className="py-24 bg-slate-50 border-t border-slate-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 {/* Header */}
                 <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900 mb-4">
-                        Erfolgreiche Projekte bei Technologieführern
+                        {t('title')}
                     </h2>
                     <div className="w-24 h-1 bg-brand-primary mx-auto rounded-full mb-6"></div>
                     <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Seit über 15 Jahren realisiere ich anspruchsvolle Softwarelösungen für Marktführer in der Halbleiterindustrie, Medizintechnik und optischen Industrie. Hier ein Auszug meiner Projektpartner:
+                        {t('subtitle')}
                     </p>
                 </div>
 
@@ -111,7 +114,7 @@ export default function ReferencesSection() {
                 </div>
 
                 <p className="mt-12 text-sm text-slate-400 italic">
-                    * Markenlogos dienen als Referenz für durchgeführte Projekte.
+                    {t('footer')}
                 </p>
             </div>
         </section>
