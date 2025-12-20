@@ -40,15 +40,15 @@ export default function Navbar() {
                 className={`fixed w-full z-50 glass-effect border-b border-slate-200 transition-all duration-300 ${isScrolled ? "h-16 shadow-md" : "h-20"}`}
                 id="navbar"
             >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="w-full max-w-[1800px] mx-auto px-6 lg:px-12">
                     <div className="flex justify-between items-center h-full">
                         <Link href="/" className="flex-shrink-0 flex items-center gap-2">
-                            <i className="fa-solid fa-microchip text-brand-primary text-2xl"></i>
-                            <span className="font-display font-bold text-2xl tracking-wide text-brand-dark">
+                            <i className="fa-solid fa-microchip text-brand-primary text-xl sm:text-2xl"></i>
+                            <span className="font-display font-bold text-lg sm:text-2xl tracking-wide text-brand-dark">
                                 RESEARCH<span className="text-brand-primary">CONTROL</span>
                             </span>
                         </Link>
-                        <div className="hidden lg:flex space-x-6 items-center">
+                        <div className="hidden xl:flex space-x-6 2xl:space-x-8 items-center ml-8">
                             <Link href={getLinkHref("#leistungen")} className="text-slate-600 hover:text-brand-primary font-medium transition-colors text-sm uppercase tracking-wide">
                                 {t('leistungen')}
                             </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
                             </Link>
                         </div>
                         {/* Mobile Menu Button + Language Switcher (Compact) */}
-                        <div className="lg:hidden flex items-center gap-4">
+                        <div className="xl:hidden flex items-center gap-4 flex-shrink-0">
                             <LanguageSwitcher />
                             <button
                                 id="mobile-menu-btn"
@@ -97,7 +97,7 @@ export default function Navbar() {
                 {/* Mobile Menu */}
                 <div
                     id="mobile-menu"
-                    className={`${isMobileMenuOpen ? "block" : "hidden"} lg:hidden bg-white border-t border-slate-100 absolute w-full`}
+                    className={`${isMobileMenuOpen ? "block" : "hidden"} xl:hidden bg-white border-t border-slate-100 absolute w-full`}
                 >
                     <Link
                         href={getLinkHref("#leistungen")}

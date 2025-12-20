@@ -53,6 +53,8 @@ export default function Home() {
             muted
             loop
             playsInline
+            preload="auto"
+            poster="/Automatisierungstechnik.webp"
             className="object-cover w-full h-full"
           >
             <source src="/Videoerstellung_für_Website_Hero_Sektion.mp4" type="video/mp4" />
@@ -381,9 +383,9 @@ export default function Home() {
             <Link href="/impressum" className="hover:text-white transition-colors">
               {tFooter('imprint')}
             </Link>
-            <a href="#" className="hover:text-white transition-colors">
+            <Link href="/datenschutz" className="hover:text-white transition-colors">
               {tFooter('privacy')}
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

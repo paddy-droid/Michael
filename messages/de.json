@@ -114,16 +114,17 @@
     "a5": "Ein ideales Projekt startet oft mit einer spezifischen Idee für eine Maschine. Mein Ziel ist es, diese \"Maschine zum Leben zu erwecken\". Ich entwerfe die passende Applikation und sorge für eine nahtlose Integration."
   },
   "About": {
-    "title": "Ich bringe Maschinen <br /> zum Leben.",
+    "title_1": "Ich bringe Maschinen",
+    "title_2": "zum Leben.",
     "subtitle": "Der Brückenschlag zwischen IT und Maschine – maßgeschneiderte Softwarelösungen für die Industrie.",
-    "intro_title": "Der Brückenschlag zwischen <span class=\"text-brand-primary\">IT und Maschine</span>",
+    "intro_title": "Der Brückenschlag zwischen <highlight>IT und Maschine</highlight>",
     "intro_text_1": "Mein Name ist Michael Hermann, und ich bin Diplomingenieur (FH) für Technologie elektronischer Bauelemente und Spezialingenieur für Mikroprozessortechnik. Meine Leidenschaft liegt genau an der Schnittstelle zweier Welten: Dort, wo <strong>klassische Maschinenbau-Hardware</strong> auf <strong>moderne Software-Architektur</strong> trifft.",
     "intro_text_2": "Während viele Entwickler rein in der virtuellen Welt bleiben, liegt meine Kernkompetenz darin, Windows-Applikationen zu entwickeln, die reale industrielle Prozesse steuern, anzeigen und protokollieren. Ich sorge dafür, dass Ihr PC nicht nur Daten verarbeitet, sondern direkt mit Sensoren, Motoren und Ventilen kommuniziert.",
     "quote_title": "Meine Philosophie: Mehr als nur Code",
     "quote_text": "\"Ein Projekt ist für mich dann erfolgreich, wenn aus einer starren Konstruktion ein dynamischer Prozess wird. Mein Lieblingsprojekt beginnt oft mit Ihrer Idee für eine Maschine oder ein Messgerät und endet damit, dass ich diese Maschine durch meine Software zum Leben erwecke.\"",
     "intro_text_3": "Dabei verstehe ich mich nicht als reiner Befehlsempfänger für Software-Code, sondern als <strong>Partner im gesamten Entwicklungsprozess</strong>. Von der Auswahl der geeigneten Sensoren über die Erstellung der Stromlaufpläne bis hin zur gemeinsamen Inbetriebnahme in der Fertigungshalle.",
     "why_title": "Warum PC-basierte Steuerung?",
-    "why_text": "In meiner langjährigen Praxis – unter anderem für Kunden wie <span class=\"text-white font-semibold\"> Carl Zeiss, Infineon und seleon</span> – habe ich gelernt, dass eine reine SPS oft nicht ausreicht. Wenn Prozesse hochflexibel sein müssen, komplexe mathematische Berechnungen erfordern oder tief in die Firmen-IT integriert werden sollen, ist eine .NET-Applikation unter Windows überlegen.",
+    "why_text": "In meiner langjährigen Praxis – unter anderem für Kunden wie <highlight> Carl Zeiss, Infineon und seleon</highlight> – habe ich gelernt, dass eine reine SPS oft nicht ausreicht. Wenn Prozesse hochflexibel sein müssen, komplexe mathematische Berechnungen erfordern oder tief in die Firmen-IT integriert werden sollen, ist eine .NET-Applikation unter Windows überlegen.",
     "stats_exp": {
       "val": "15+ Jahre",
       "sub": "Erfahrung in der Industrie"
@@ -146,5 +147,37 @@
     "cta_text": "Egal ob Sie eine komplexe Hybrid-Lösung aus PC und SPS benötigen oder eine maßgeschneiderte Visualisierung für einen Versuchsstand suchen – ich stehe bereit, um Ihre Anforderungen in funktionierende Software umzusetzen.",
     "cta_btn_contact": "Kontakt aufnehmen",
     "cta_btn_home": "Zur Startseite"
+  },
+  "CookieBanner": {
+    "text": "Wir nutzen Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "privacy_link": "Datenschutzerklärung"
+  },
+  "Privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:",
+    "sections": {
+      "general": {
+        "title": "Ihre Betroffenenrechte",
+        "content": "Unter den angegebenen Kontaktdaten können Sie jederzeit folgende Rechte ausüben:<ul><li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li><li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li><li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li><li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),</li><li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li><li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).</li></ul>"
+      },
+      "collection": {
+        "title": "Erfassung allgemeiner Informationen beim Besuch unserer Website",
+        "content": "Wenn Sie auf unsere Website zugreifen, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers und ähnliches. Diese Daten werden insbesondere zu folgenden Zwecken verarbeitet: Sicherstellung eines problemlosen Verbindungsaufbaus der Website, Sicherstellung einer reibungslosen Nutzung unserer Website, Auswertung der Systemsicherheit und -stabilität sowie zu weiteren administrativen Zwecken. Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen."
+      },
+      "security": {
+        "title": "SSL- bzw. TLS-Verschlüsselung",
+        "content": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+      },
+      "contact": {
+        "title": "Kontaktaufnahme",
+        "content": "Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren, werden die von Ihnen übermittelten Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+      }
+    }
+  },
+  "Metadata": {
+    "title": "PC-Automatisierung & Software | Ing. Michael Hermann",
+    "description": "Maßgeschneiderte PC-Steuerungen & Software für die Industrie. Spezialist für .NET, SPS-Integration & Automatisierung."
   }
 }

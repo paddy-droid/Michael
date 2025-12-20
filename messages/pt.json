@@ -114,16 +114,17 @@
         "a5": "Um projeto ideal começa muitas vezes com uma ideia específica para uma máquina. Meu objetivo é \"dar vida a essa máquina\". Projeto a aplicação adequada e garanto uma integração perfeita."
     },
     "About": {
-        "title": "Eu dou vida <br /> às máquinas.",
+        "title_1": "Eu dou vida",
+        "title_2": "às máquinas.",
         "subtitle": "A ponte entre TI e máquina – soluções de software personalizadas para a indústria.",
-        "intro_title": "A ponte entre <span class=\"text-brand-primary\">TI e máquina</span>",
+        "intro_title": "A ponte entre <highlight>TI e máquina</highlight>",
         "intro_text_1": "Meu nome é Michael Hermann, sou engenheiro diplomado (FH) em tecnologia de componentes eletrônicos e engenheiro especialista em tecnologia de microprocessadores. Minha paixão reside exatamente na interface de dois mundos: Onde o <strong>hardware clássico de engenharia mecânica</strong> encontra a <strong>arquitetura de software moderna</strong>.",
         "intro_text_2": "Enquanto muitos desenvolvedores permanecem puramente no mundo virtual, minha competência central é desenvolver aplicações Windows que controlam, exibem e registram processos industriais reais. Garanto que seu PC não apenas processe dados, mas se comunique diretamente com sensores, motores e válvulas.",
         "quote_title": "Minha Filosofia: Mais do que apenas código",
         "quote_text": "\"Para mim, um projeto só é bem-sucedido quando uma construção rígida se torna um processo dinâmico. Meu projeto favorito começa frequentemente com sua ideia para uma máquina ou instrumento de medição e termina comigo dando vida a essa máquina através do meu software.\"",
         "intro_text_3": "Não me vejo apenas como um receptor de ordens para código de software, mas como <strong>parceiro em todo o processo de desenvolvimento</strong>. Da seleção dos sensores adequados, passando pela criação dos diagramas de circuitos, até o comissionamento conjunto no chão de fábrica.",
         "why_title": "Por que controle baseado em PC?",
-        "why_text": "Em minha longa prática – inclusive para clientes como <span class=\"text-white font-semibold\"> Carl Zeiss, Infineon e seleon</span> – aprendi que um simples PLC muitas vezes não é suficiente. Quando processos precisam ser altamente flexíveis, exigem cálculos matemáticos complexos ou devem ser profundamente integrados à TI da empresa, uma aplicação .NET no Windows é superior.",
+        "why_text": "Em minha longa prática – inclusive para clientes como <highlight> Carl Zeiss, Infineon e seleon</highlight> – aprendi que um simples PLC muitas vezes não é suficiente. Quando processos precisam ser altamente flexíveis, exigem cálculos matemáticos complexos ou devem ser profundamente integrados à TI da empresa, uma aplicação .NET no Windows é superior.",
         "stats_exp": {
             "val": "15+ Anos",
             "sub": "Experiência na Indústria"
@@ -146,5 +147,37 @@
         "cta_text": "Seja uma solução híbrida complexa de PC e PLC ou uma visualização personalizada para uma bancada de testes – estou pronto para transformar seus requisitos em software funcional.",
         "cta_btn_contact": "Entrar em contato",
         "cta_btn_home": "Para a página inicial"
+    },
+    "CookieBanner": {
+        "text": "Utilizamos cookies para oferecer a melhor experiência possível em nosso site.",
+        "accept": "Aceitar",
+        "decline": "Recusar",
+        "privacy_link": "Política de Privacidade"
+    },
+    "Privacy": {
+        "title": "Política de Privacidade",
+        "intro": "O órgão responsável no sentido das leis de proteção de dados, em particular o Regulamento Geral de Proteção de Dados da UE (GDPR), é:",
+        "sections": {
+            "general": {
+                "title": "Seus Direitos como Titular dos Dados",
+                "content": "Você pode exercer os seguintes direitos a qualquer momento usando os dados de contato fornecidos:<ul><li>Informações sobre seus dados armazenados conosco e seu processamento (Art. 15 GDPR),</li><li>Correção de dados pessoais incorretos (Art. 16 GDPR),</li><li>Exclusão de seus dados armazenados conosco (Art. 17 GDPR),</li><li>Restrição do processamento de dados, caso ainda não tenhamos permissão para excluir seus dados devido a obrigações legais (Art. 18 GDPR),</li><li>Objeção ao processamento de seus dados por nós (Art. 21 GDPR) e</li><li>Portabilidade de dados, desde que você tenha consentido com o processamento de dados ou tenha celebrado um contrato conosco (Art. 20 GDPR).</li></ul>"
+            },
+            "collection": {
+                "title": "Coleta de informações gerais ao visitar nosso site",
+                "content": "Quando você acessa nosso site, informações de natureza geral são coletadas automaticamente. Essas informações (arquivos de log do servidor) incluem o tipo de navegador da web, o sistema operacional usado, o nome de domínio do seu provedor de serviços de Internet e similares. Esses dados são processados em particular para os seguintes fins: garantir uma conexão sem problemas com o site, garantir o uso suave do nosso site, avaliar a segurança e estabilidade do sistema, bem como para outros fins administrativos. Não usamos seus dados para tirar conclusões sobre sua pessoa."
+            },
+            "security": {
+                "title": "Criptografia SSL ou TLS",
+                "content": "Por motivos de segurança e para proteger a transmissão de conteúdo confidencial, como consultas que você nos envia como operador do site, este site usa criptografia SSL ou TLS. Você pode reconhecer uma conexão criptografada pela mudança na linha de endereço do navegador de “http://” para “https://” e pelo símbolo de cadeado na linha do navegador."
+            },
+            "contact": {
+                "title": "Contato",
+                "content": "Se você entrar em contato conosco por e-mail ou formulário de contato, as informações fornecidas (por exemplo, nome, e-mail, conteúdo da mensagem) serão armazenadas para fins de processamento da solicitação e para o caso de dúvidas de acompanhamento. Não repassaremos esses dados sem o seu consentimento."
+            }
+        }
+    },
+    "Metadata": {
+        "title": "Automação PC e Software | Eng. Michael Hermann",
+        "description": "Software de controle e automação industrial personalizado. Especialista em .NET, integração PLC e controle de máquinas."
     }
 }

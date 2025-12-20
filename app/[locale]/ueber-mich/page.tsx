@@ -23,7 +23,10 @@ export default function AboutPage() {
                             </span>
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-                            {t.rich('title', { br: () => <br /> })}
+                            {t('title_1')} <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-accent to-brand-primary bg-300% animate-gradient">
+                                {t('title_2')}
+                            </span>
                         </h1>
                         <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">
                             {t('subtitle')}
@@ -69,7 +72,7 @@ export default function AboutPage() {
                         <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 leading-relaxed">
                             <div>
                                 <h2 className="text-3xl font-display font-bold text-slate-900 mb-6">
-                                    {t.rich('intro_title', { span: (chunks) => <span className="text-brand-primary">{chunks}</span> })}
+                                    {t.rich('intro_title', { highlight: (chunks) => <span className="text-brand-primary">{chunks}</span> })}
                                 </h2>
                                 <p className="mb-6">
                                     {t.rich('intro_text_1', { strong: (chunks) => <strong>{chunks}</strong> })}
@@ -108,7 +111,7 @@ export default function AboutPage() {
                         <div className="mb-12 lg:mb-0">
                             <h2 className="text-3xl font-display font-bold mb-6">{t('why_title')}</h2>
                             <p className="text-slate-300 text-lg mb-8">
-                                {t.rich('why_text', { span: (chunks) => <span className="text-white font-semibold">{chunks}</span> })}
+                                {t.rich('why_text', { highlight: (chunks) => <span className="text-white font-semibold">{chunks}</span> })}
                             </p>
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="bg-white/5 p-4 rounded-lg border border-white/10">
