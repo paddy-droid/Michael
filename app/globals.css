@@ -20,6 +20,10 @@
   /* Warm shadow */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom Utilities */
 .glass-effect {
   background: rgba(255, 255, 255, 0.9);
@@ -51,6 +55,6 @@
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px -5px rgba(14, 165, 233, 0.25);
-  border-color: #0ea5e9;
+  box-shadow: 0 20px 40px -5px rgba(249, 115, 22, 0.25);
+  border-color: var(--color-brand-primary);
 }

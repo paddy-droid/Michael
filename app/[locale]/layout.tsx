@@ -30,6 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL('https://researchcontrol.de'),
     title: t('title'),
     description: t('description'),
+    verification: {
+      google: "KpfDyO0VzhkhzdU5x6sW-XMa30Eyk7gfbrcj96hO9ao",
+    },
   };
 }
 

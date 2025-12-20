@@ -67,7 +67,7 @@ export default function Navbar() {
                             <Link href={getLinkHref("#faq")} className="text-slate-600 hover:text-brand-primary font-medium transition-colors text-sm uppercase tracking-wide">
                                 {t('faq')}
                             </Link>
-                            <Link href="/ueber-mich" className="text-slate-600 hover:text-brand-primary font-medium transition-colors text-sm uppercase tracking-wide">
+                            <Link href={getLinkHref("#ueber-mich-section")} className="text-slate-600 hover:text-brand-primary font-medium transition-colors text-sm uppercase tracking-wide">
                                 {t('ueber_mich')}
                             </Link>
 
@@ -142,7 +142,7 @@ export default function Navbar() {
                         {t('faq')}
                     </Link>
                     <Link
-                        href="/ueber-mich"
+                        href={getLinkHref("#ueber-mich-section")}
                         className="block px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-brand-primary"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >

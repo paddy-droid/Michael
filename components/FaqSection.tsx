@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 
 export default function FaqSection() {
@@ -11,7 +11,26 @@ export default function FaqSection() {
         setOpenIndex(openIndex === index ? null : index);
     };
 
-    const faqItems = [1, 2, 3, 4, 5];
+    const faqItems = [1, 2, 3, 4, 5, 6, 7];
+
+    useEffect(() => {
+        const handleHashChange = () => {
+            const hash = window.location.hash;
+            if (hash.startsWith('#faq-item-')) {
+                const index = parseInt(hash.replace('#faq-item-', ''), 10);
+                if (!isNaN(index)) {
+                    setOpenIndex(index);
+                }
+            }
+        };
+
+        // Check on initial load
+        handleHashChange();
+
+        // Listen for hash changes
+        window.addEventListener('hashchange', handleHashChange);
+        return () => window.removeEventListener('hashchange', handleHashChange);
+    }, []);
 
     // Helper to strip HTML tags for Schema
     const stripHtml = (html: string) => {
@@ -54,7 +73,8 @@ export default function FaqSection() {
                     {faqItems.map((num, index) => (
                         <div
                             key={index}
-                            className="border border-slate-200 rounded-xl overflow-hidden bg-slate-50 transition-all duration-300 hover:shadow-md"
+                            id={`faq-item-${index}`}
+                            className="border border-slate-200 rounded-xl overflow-hidden bg-slate-50 transition-all duration-300 hover:shadow-md scroll-mt-28"
                         >
                             <button
                                 onClick={() => toggleAccordion(index)}

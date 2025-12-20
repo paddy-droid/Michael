@@ -6,6 +6,8 @@ import FaqSection from "@/components/FaqSection";
 import ReferencesSection from "@/components/ReferencesSection";
 import VideoSection from "@/components/VideoSection";
 import GallerySection from "@/components/GallerySection";
+import AboutSection from "@/components/AboutSection";
+import StartupCtaSection from "@/components/StartupCtaSection";
 
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
@@ -305,8 +307,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Startup CTA Section */}
+      <StartupCtaSection />
+
       {/* Video Section */}
       <VideoSection />
+
+      {/* Gallery Section */}
+      <GallerySection />
+
+      {/* FAQ Section */}
+      <FaqSection />
+
+      {/* References Section */}
+      <ReferencesSection />
+
+      {/* About Section */}
+      <AboutSection />
 
       {/* Contact / CTA Section */}
       <section id="kontakt" className="py-24 bg-brand-dark text-white relative overflow-hidden">
@@ -363,15 +380,6 @@ export default function Home() {
           </div>
         </div>
       </section >
-
-      {/* Gallery Section */}
-      <GallerySection />
-
-      {/* FAQ Section */}
-      <FaqSection />
-
-      {/* References Section */}
-      <ReferencesSection />
 
       {/* Footer */}
       <footer className="bg-slate-900 border-t border-slate-800 py-12 text-slate-400 text-sm">

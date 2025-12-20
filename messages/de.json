@@ -111,7 +111,11 @@
     "q4": "Begleiten Sie Projekte nur softwareseitig oder bieten Sie einen ganzheitlichen Service?",
     "a4": "Mein Ansatz ist ganzheitlich. Ich begleite Sie durch den gesamten Prozess – von Architektur & Design, über Hardware-Planung und Inbetriebnahme bis zum Lifecycle-Service.",
     "q5": "Wie sieht ein typisches Projekt mit Ihnen aus?",
-    "a5": "Ein ideales Projekt startet oft mit einer spezifischen Idee für eine Maschine. Mein Ziel ist es, diese \"Maschine zum Leben zu erwecken\". Ich entwerfe die passende Applikation und sorge für eine nahtlose Integration."
+    "a5": "Ein ideales Projekt startet oft mit einer spezifischen Idee für eine Maschine. Mein Ziel ist es, diese \"Maschine zum Leben zu erwecken\". Ich entwerfe die passende Applikation und sorge für eine nahtlose Integration.",
+    "q6": "Können Sie konkrete Beispiele für erfolgreiche PC-Steuerungen nennen?",
+    "a6": "Absolut. Hier zwei Beispiele, die die Stärken einer PC-basierten Lösung zeigen:<br/><br/><strong>1. High-End Messtechnik (Carl Zeiss AG):</strong><br/>Für eine komplexe Hohlspiegel-Vermessung mittels Laser wurde eine flexible Lösung benötigt. Da das Messverfahren während des Projekts erst final spezifiziert wurde, war eine agile .NET-Software ideal. Sie steuert die komplexe Mathematik (Regression N-ten Grades), kommuniziert via OPC UA mit einer Sicherheits-SPS und erstellt zertifizierte Reports. Die Anlage läuft seit über 10 Jahren zuverlässig.<br/><br/><strong>2. Retrofit & Migration (TU Bergakademie):</strong><br/>Migration einer Kristallzüchtungsanlage von Windows 95 auf Windows 11. Dank guter Dokumentation der RS232/RS485-Schnittstellen konnte das Projekt in nur 5 Wochen umgesetzt werden. Das Ergebnis: Eine moderne, wartbare Software, die nun auch von Studenten weiterentwickelt werden kann.",
+    "q7": "Mit welchem Stundensatz oder Kostenmodell muss ich rechnen?",
+    "a7": "Mein Honorar gestaltet sich flexibel und fair:<br/><br/><ul><li><strong>Stundensatz:</strong> Je nach Komplexität, Dauer und Ort liegt dieser typischerweise zwischen 65€ und 100€.</li><li><strong>Festpreis (Bevorzugt):</strong> Bei klar definierten Projekten biete ich Ihnen gerne einen festen Projektpreis an. Das gibt Ihnen Planungssicherheit für Budget und Termine.</li><li><strong>Für Start-ups:</strong> Ich unterstütze innovative Ideen gerne mit einem flexiblen Zahlungsmodell (z.B. 25% Anzahlung, Restzahlung nach einem Jahr).</li></ul><br/>Am besten besprechen wir Ihr Vorhaben persönlich, um das passende Modell zu finden."
   },
   "About": {
     "title_1": "Ich bringe Maschinen",
@@ -175,6 +179,11 @@
         "content": "Wenn Sie uns per Kontaktformular oder E-Mail kontaktieren, werden die von Ihnen übermittelten Daten (z. B. Name, E-Mail-Adresse, Inhalt der Nachricht) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
       }
     }
+  },
+  "StartupCta": {
+    "title": "Start-Up Angebot & Innovative Ideen",
+    "subtitle": "Sie haben eine visionäre Idee, aber das Budget ist knapp? Wir unterstützen junge Unternehmen mit einem speziellen Finanzierungsmodell: Zahlen Sie anfangs nur 25% und starten Sie durch.",
+    "btn_text": "Mehr zum Startup-Modell"
   },
   "Metadata": {
     "title": "PC-Automatisierung & Software | Ing. Michael Hermann",

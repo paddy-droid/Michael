@@ -6,7 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Define all routes that should be indexed
     const routes = [
         '',              // Homepage
-        '/ueber-mich',   // Über mich
         '/impressum',    // Impressum
         '/datenschutz',  // Datenschutz
     ];
@@ -21,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 url: `${baseUrl}/${locale}${route}`,
                 lastModified: new Date(),
                 changeFrequency: route === '' ? 'weekly' : 'monthly',
-                priority: route === '' ? 1.0 : (route === '/ueber-mich' ? 0.8 : 0.5),
+                priority: route === '' ? 1.0 : 0.5,
             });
         });
     });
