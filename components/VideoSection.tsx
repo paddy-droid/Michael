@@ -1,11 +1,16 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function VideoSection() {
     const videoRef = useRef<HTMLVideoElement>(null);
     const t = useTranslations('VideoSection');
+    const locale = useLocale();
+
+    const videoSrc = locale === 'pt'
+        ? "/Software_Físico-Técnico.mp4"
+        : "/Erklärvideo%20zur%20PC-%20Automatisierung.mp4";
 
     return (
         <section id="automatisierung" className="py-24 bg-slate-50 border-y border-slate-200 overflow-hidden">
@@ -28,12 +33,13 @@ export default function VideoSection() {
                     <div className="relative aspect-video bg-slate-900 flex items-center justify-center">
                         <video
                             ref={videoRef}
+                            key={locale} /* Key forces re-render when locale changes to update source */
                             className="w-full h-full object-cover"
                             controls
                             preload="metadata"
                             playsInline
                         >
-                            <source src="/Erklärvideo%20zur%20PC-%20Automatisierung.mp4" type="video/mp4" />
+                            <source src={videoSrc} type="video/mp4" />
                             Ihr Browser unterstützt das Video-Tag nicht.
                         </video>
 
